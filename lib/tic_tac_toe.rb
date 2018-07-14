@@ -152,7 +152,7 @@ def winner
   end
 end
 
-def play
+#def play
 #  until over?
 #    turn
 #  end
@@ -164,4 +164,4 @@ def play
 #  elsif draw?
 #    puts "Cat's Game!"
 #  end
-end
+#end
