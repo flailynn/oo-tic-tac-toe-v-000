@@ -157,7 +157,8 @@ def play
     turn
   end
 
-winner_of_game = winner
+  winner_of_game = winner
+
   if won?
     puts "Congratulations #{winner_of_game}!"
   elsif draw?
