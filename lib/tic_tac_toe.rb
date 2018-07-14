@@ -35,23 +35,23 @@ def position_taken?(index)
 !(@board[index].nil? || @board[index] == " ")
 end
 
+# #valid_move? method determins if the user input is:
+#   1) a valid position on the board
+#   2) not taken
+
+def valid_move?(index)
+  if index.between?(0,8)
+    !position_taken?(index)
+  else
+    false
+  end
+end
+
 # #move method
 def move(index, token)
   @board[index] = token
 end
 
-
-# #valid_move? method determins if the user input is:
-#   1) a valid position on the board
-#   2) not taken
-
-def valid_move?(board, index)
-  if index.between?(0,8)
-    !position_taken?(board, index)
-  else
-    false
-  end
-end
 
 # #current_player - determine the current player (X or O)
 def current_player(board)
