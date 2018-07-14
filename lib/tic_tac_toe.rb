@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
-
+=begin
 # display_board displays the Tic Tac Toe board
 def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -91,7 +91,7 @@ def current_player
 end
 
 
-=begin
+
 
 
 # #won? method determines if the game has been won by a player
