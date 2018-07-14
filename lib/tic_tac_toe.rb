@@ -31,6 +31,11 @@ def input_to_index=(input)
   input.to_i - 1
 end
 
+# #move method
+def move(index, token="X")
+  @board[index] = token
+end
+
 def position_taken?(index)
 !(@board[index].nil? || @board[index] == " ")
 end
@@ -47,10 +52,7 @@ def valid_move?(index)
   end
 end
 
-# #move method
-def move(index, token)
-  @board[index] = token
-end
+
 
 
 # #current_player - determine the current player (X or O)
