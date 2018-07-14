@@ -134,8 +134,8 @@ end
 # #over? method determines if any of the following has occured:
 #   1. A player has won
 #   2. The game is a draw
-def over?(board)
-  if won?(board) || draw?(board)
+def over?
+  if won? || draw?
     true
   else
     false
@@ -143,10 +143,10 @@ def over?(board)
 end
 
 # #winner method determines which player won (X or O)
-def winner(board)
-  if won?(board)
-    winning_index = won?(board)[0]
-    winning_token = board[winning_index]
+def winner
+  if won?
+    winning_index = won?[0]
+    winning_token = @board[winning_index]
   else
     nil
   end
