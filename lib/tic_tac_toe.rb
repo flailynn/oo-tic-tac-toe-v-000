@@ -1,7 +1,7 @@
 class TicTacToe
   def initialize(board)
     @board = board
-  end 
+  end
 
   # Define your WIN_COMBINATIONS constant
   WIN_COMBINATIONS = [
@@ -160,12 +160,12 @@ class TicTacToe
       turn
     end
 
-  winner_of_game = winner
+    winner_of_game = winner
 
-#  if won?
-#    puts "Congratulations #{winner_of_game}!"
-#  elsif draw?
-#    puts "Cat's Game!"
-#  end
-#end
+    if won?
+      puts "Congratulations #{winner_of_game}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
+  end
 end
