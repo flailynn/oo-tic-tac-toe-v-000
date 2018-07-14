@@ -34,8 +34,8 @@ def input_to_index=(input)
 end
 
 # #move method
-def move(board, index, token)
-  board[index] = token
+def move(index, token)
+  @board[index] = token
 end
 
 
