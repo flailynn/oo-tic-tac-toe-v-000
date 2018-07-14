@@ -153,15 +153,15 @@ def winner
 end
 
 def play
-  until over?
-    turn
-  end
+#  until over?
+#    turn
+#  end
 
-  winner_of_game = winner
+#  winner_of_game = winner
 
-  if won?
-    puts "Congratulations #{winner_of_game}!"
-  elsif draw?
-    puts "Cat's Game!"
-  end
+#  if won?
+#    puts "Congratulations #{winner_of_game}!"
+#  elsif draw?
+#    puts "Cat's Game!"
+#  end
 end
