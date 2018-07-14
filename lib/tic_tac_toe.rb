@@ -3,9 +3,7 @@ class TicTacToe
     @board = board
   end
 
-  def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
@@ -31,6 +29,10 @@ end
 # input_to_index converts user input to array index value
 def input_to_index=(input)
   input.to_i - 1
+end
+
+def position_taken?(index)
+!(@board[index].nil? || @board[index] == " ")
 end
 
 # #move method
