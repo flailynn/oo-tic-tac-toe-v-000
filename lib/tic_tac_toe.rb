@@ -7,6 +7,18 @@ class TicTacToe
   !(board[index].nil? || board[index] == " ")
 end
 
+# Define your WIN_COMBINATIONS constant
+WIN_COMBINATIONS = [
+  [0,1,2],
+  [3,4,5],
+  [6,7,8],
+  [0,3,6],
+  [1,4,7],
+  [2,5,8],
+  [0,4,8],
+  [2,4,6]
+]
+
 # display_board displays the Tic Tac Toe board
 def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -77,17 +89,7 @@ def turn(board)
   end
 end
 
-# Define your WIN_COMBINATIONS constant
-WIN_COMBINATIONS = [
-  [0,1,2],
-  [3,4,5],
-  [6,7,8],
-  [0,3,6],
-  [1,4,7],
-  [2,5,8],
-  [0,4,8],
-  [2,4,6]
-]
+
 
 # #won? method determines if the game has been won by a player
 # returns array of win_combination if true or nil if false
