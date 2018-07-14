@@ -30,7 +30,7 @@ class TicTacToe
   end
 
   # input_to_index converts user input to array index value
-  def input_to_index=(input)
+  def input_to_index(input)
     input.to_i - 1
   end
 
